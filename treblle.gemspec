@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'treblle'
-  s.version     = '1.0.3'
+  s.version     = '1.0.4'
   s.summary     = "TreblleSDK"
   s.description = "TreblleSDK for ruby"
   s.authors     = ["Hrvoje Grdic"]

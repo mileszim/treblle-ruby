@@ -132,6 +132,8 @@ class DataBuilder
 
   def request_headers
     @request_headers ||= request.headers.env.reject { |key| key.to_s.include?('.') }
+    @request_headers['Authorization'] = @request_headers['HTTP_AUTHORIZATION'] if @request_headers['HTTP_AUTHORIZATION'].present?
+    @request_headers
   end
 
   def safe_to_json(obj)
